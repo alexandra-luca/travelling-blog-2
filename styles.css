@@ -116,3 +116,32 @@ textarea {
 footer {
     margin-top: 100px;
 }
+
+.post {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.comment .email {
+    font-size: 9px;
+}
+
+.comment .name {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.comment .body {
+    font-size: 10px;
+}
+
+.comment {
+    margin-top: 10px;
+}
