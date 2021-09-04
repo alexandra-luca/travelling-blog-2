@@ -58,6 +58,9 @@ function fillPosts(posts) {
         let contents = document.createElement("div");
         contents.innerHTML = posts[i].body;
 
+        let img = document.createElement("img");
+        img.setAttribute("src", "https://picsum.photos/1280/720");
+
         let comments = document.createElement("div");
         for (let j = 0; j < all_comments.length; j++) {
             if (all_comments[i].postId === posts[i].id) {
@@ -86,6 +89,7 @@ function fillPosts(posts) {
 
         div.appendChild(h2);
         div.appendChild(contents);
+        div.appendChild(img);
         div.appendChild(comments);
 
         container.appendChild(div);
