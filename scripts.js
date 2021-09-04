@@ -59,11 +59,11 @@ function fillPosts(posts) {
         contents.innerHTML = posts[i].body;
 
         let img = document.createElement("img");
-        img.setAttribute("src", "https://picsum.photos/1280/720");
+        img.setAttribute("src", "https://picsum.photos/1280/720?random=" + i);
 
         let comments = document.createElement("div");
         for (let j = 0; j < all_comments.length; j++) {
-            if (all_comments[i].postId === posts[i].id) {
+            if (all_comments[j].postId === posts[i].id) {
                 let comment = document.createElement("div");
                 comment.setAttribute("class", "comment");
 
